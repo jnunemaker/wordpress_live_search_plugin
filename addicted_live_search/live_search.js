@@ -6,7 +6,7 @@ var AddictedToLiveSearch = {
 		if (AddictedToLiveSearch.s) {
 			AddictedToLiveSearch.s.autocomplete = 'off';
 			var form = AddictedToLiveSearch.s.up('form');
-			form.insert(new Element('div', {'id':'addicted_results'}));
+			form.insert(new Element('div', {'id':'addicted_results', 'style':'display:none'}));
 			new Form.Element.Observer(AddictedToLiveSearch.s, 0.8, AddictedToLiveSearch.showResults);
 			AddictedToLiveSearch.box = $('addicted_results');
 		}
